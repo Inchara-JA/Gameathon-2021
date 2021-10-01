@@ -18,20 +18,17 @@
 }
 
 body{
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
--webkit-scrollbar { display: none; }
 
 
 /*NAV BAR*/
 
 
-
-
 nav {
   display: flex; 
   width: 100%;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0);
   align-items: center;
   justify-content: space-between; 
   flex-wrap: wrap;
@@ -177,7 +174,7 @@ section{
 .intro {
   /* margin-right: 50%; */
   z-index: 1;
-  margin-right: 81%;
+  margin-right: 77%;
   margin-top: 100px;
   text-align: center;
   color: #fff;
@@ -187,10 +184,12 @@ section{
   color: rgb(213, 219, 224);
   position: absolute;
   font-weight: 1em;
-  font-size: 1em; 
+  font-size: 1vw; 
 }
 
-.association{
+
+
+/* .association{
   margin-top: 5%;
   margin-right: 61%; 
   z-index: 1; 
@@ -200,16 +199,17 @@ section{
   color: rgb(255, 255, 255);
   position: absolute;
   font-weight: 1em;
-  font-size: 1em;
+  font-size: 1.2vw;
   text-align: center;
   align-items: center;
   justify-content: center;
-}
+} */
 
 .presents{
   margin-right: 50%;
   z-index: 1;
-  margin-top: 120px;
+  margin-top: 2%;
+
 }
 
 .presents h6{
@@ -217,12 +217,14 @@ section{
   /* position: absolute; */
   font-weight: 1em;
   font-size: 1em;
-  /* text-align: center;
-  align-items: center;
-  justify-content: center; */
 }
 
-.gameathon-logo img{
+.presents img{
+  height: 13vh;
+  margin-right: 50%;
+}
+
+/* .gameathon-logo img{
   height: 13vh; 
   float: left;
   
@@ -231,7 +233,7 @@ section{
 .gameathon-logo{
   margin-right: 50%;
 
-}
+} */
 
 .gameathon-title {
   display: flex;
@@ -241,7 +243,7 @@ section{
 
 .gameathon-title h2 {
   font-family: "Crushed";
-  font-size: 45px;
+  font-size: 3vw;
 }
 
 .gameathon-title .white h2{
@@ -254,9 +256,9 @@ h2 {
 
 .tag-line{
   margin-top: 1%;
-  margin-right: 30%;
+  /*margin-right: 20%;*/
   z-index: 0; 
-  
+  display: flex;
 }
 
 .tag-line h6{
@@ -268,6 +270,30 @@ h2 {
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
+  }
+
+  /* #queppelin{
+    margin-top: 70%;
+    margin-left: 88%;
+    
+  } */
+
+  .tag-line{   
+    margin-right: 30%;
+  }
+
+  .presents{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: 51vw;
+  }
+
+  .presents img{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5vw;
   }
 
 }
@@ -282,9 +308,6 @@ h2 {
   }
 
   .intro {
-    /* text-align: center;
-    align-items: center;
-    justify-content: center; */
     margin-right: 100%;
     z-index: 0;
     margin-top: 40%;;
@@ -301,7 +324,12 @@ h2 {
     justify-content: center;
     
   }
-  
+
+  /* #queppelin{
+    margin-top: 10%;
+    margin-left: 8%;
+    z-index: 1;
+  }   */
 
   .association{
     margin-top: 25%;
@@ -321,11 +349,11 @@ h2 {
   }
 
   .presents{
-    margin-top: 28%;
+    margin-top: 58%;
     margin-right: 28%; 
     z-index: 0;
+    margin-left: 25vw;
   }
-
 
   .presents h6{
     color: rgb(255, 255, 255);
@@ -337,15 +365,15 @@ h2 {
     justify-content: center;
   }
 
-  .gameathon-logo{
-    z-index: 0;
-    margin-top: 8%;
-    margin-right: 0%;
+  .presents img{
+    margin-top: 30%;
+    margin-left: 10px;
   }
 
 
+
   .gameathon-title{
-    margin-top: 10%;
+    margin-top: 5%;
     margin-right: 1%;
     z-index: 0; 
     
@@ -362,16 +390,12 @@ h2 {
   .tag-line{
     margin-top: 1%;
     z-index: 0; 
-    margin-left: 37%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    display: flex;
   }
 
   .tag-line h6{
     color: rgb(255, 255, 255);
-    font-weight: 0.5em;
-    font-size: 1em;
+    display: flex;
   }
 
 
